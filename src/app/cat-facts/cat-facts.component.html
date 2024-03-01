@@ -1,0 +1,15 @@
+<div>
+      
+  <div>
+    <p>You are logged in!</p>
+    <button (click)="logout()">Logout</button>
+  </div>
+    <h2>Cat Facts</h2>
+    Count: {{catFacts.length}}
+    <div class="cards">
+        <div class="card" *ngFor="let fact of catFacts">
+          {{ fact }}
+        </div>
+    </div>
+    <div *ngIf="loading">Loading...</div>
+  </div>

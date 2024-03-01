@@ -1,0 +1,16 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    & > .card {
+        width: 15%;
+        height: 100px;
+        background-color: #f0f0f0; /* Kolor tła */
+        border: 1px solid #ccc; /* Ramka */
+        border-radius: 5px; /* Zaokrąglenie krawędzi */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Cień */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+}
